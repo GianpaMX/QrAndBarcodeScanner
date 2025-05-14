@@ -12,9 +12,13 @@ sentry {
 }
 
 android {
+    buildFeatures {
+        buildConfig = true
+    }
     compileSdkVersion 31
     buildToolsVersion "30.0.3"
 
+    namespace = "com.example.barcodescanner"
     defaultConfig {
         applicationId "com.example.barcodescanner"
         minSdkVersion 21
